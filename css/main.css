@@ -1,0 +1,146 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5.4rem;
+    color: #3c8fd8;
+    margin-bottom: 5rem;
+}
+
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* Utilities */
+
+#home {
+    min-height: 100vh;
+    background-color: #ecf5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+a,
+button {
+    font-size: 1.8rem;
+    border: 0.1rem solid #3c8fd8;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: #fff;
+    padding: 1rem 0;
+    width: 20rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    color: #3c8fd8;
+}
+
+a[disabled]:hover,
+button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* high scores*/
+
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    transition: transform 0.5s;
+}
+
+.high-score:hover {
+    transform: scale(1.1);
+}
+
+/* loading screen */
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    border: 1.6rem solid #fff;
+    border-radius: 50%;
+    border-top: 1.6rem solid #3c8fd8;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        font-weight: 600;
+    }
+}

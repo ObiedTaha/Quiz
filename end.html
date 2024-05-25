@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quick quiz app to test user's knowledge in computer science">
+    <meta name="keywords" content="html, css, bootstrap, javascript">
+    <meta name="author" content="mohamed hadaey">
+    <link rel="icon" href="images/Angular_full_color_logo.svg.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/end.css">
+    <title>Congrats!</title>
+</head>
+
+<body>
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 w-100 h-100 d-flex justify-content-center align-items-center">
+                    <div class="caption text-center d-flex flex-column" id="end">
+                        <h1 id="finalScore"></h1>
+                        <form>
+                            <input type="text" name="username" id="username" placeholder="username" autocomplete="off">
+                        </form>
+                        <button type="submit" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+                        <a href="questions.html">Play Again</a>
+                        <a href="index.html">Go Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/end.js"></script>
+</body>
+
+</html>
